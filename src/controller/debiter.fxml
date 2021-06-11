@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="351.0" prefWidth="399.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.debiter">
+   <children>
+      <Pane layoutX="-1.0" layoutY="-1.0" prefHeight="44.0" prefWidth="399.0" style="-fx-border-color: black;">
+         <children>
+            <Text layoutX="114.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Debiter" textAlignment="CENTER" wrappingWidth="171.13671875">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <ComboBox fx:id="combocompte" layoutX="61.0" layoutY="85.0" onMouseClicked="#getAllidCompte" prefHeight="44.0" prefWidth="303.0" promptText="Choisir un Compte a debiter" style="-fx-background-color: white; -fx-border-color: black;" />
+      <Label fx:id="title" layoutX="76.0" layoutY="291.0" prefHeight="44.0" prefWidth="280.0" textAlignment="CENTER" textFill="#008d42">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="montantfid" layoutX="61.0" layoutY="154.0" prefHeight="44.0" prefWidth="303.0" promptText="entrer le montant ici">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Button layoutX="224.0" layoutY="221.0" mnemonicParsing="false" onMouseClicked="#submit" prefHeight="51.0" prefWidth="143.0" style="-fx-background-color: #09AE49;" text="Debiter" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="61.0" layoutY="221.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="134.0" style="-fx-background-color: #F90000;" text="Annuler" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

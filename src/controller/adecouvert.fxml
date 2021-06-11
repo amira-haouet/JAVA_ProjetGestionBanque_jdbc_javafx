@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="321.0" prefWidth="497.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.adecouvert">
+   <children>
+      <TableView fx:id="tableadecouvert" layoutX="3.0" layoutY="107.0" prefHeight="200.0" prefWidth="489.0" style="-fx-border-color: red;">
+        <columns>
+          <TableColumn fx:id="numcomptecol" prefWidth="101.0" text="id Compte" />
+          <TableColumn fx:id="clientcol" prefWidth="94.0" text="id Cient" />
+            <TableColumn fx:id="soldecol" prefWidth="151.0" text="Solde" />
+            <TableColumn fx:id="etatcol" prefWidth="141.0" text="Etat" />
+        </columns>
+      </TableView>
+      <Text fill="RED" layoutX="33.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Les Comptes dans le rouge" textAlignment="CENTER" wrappingWidth="430.13671875">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

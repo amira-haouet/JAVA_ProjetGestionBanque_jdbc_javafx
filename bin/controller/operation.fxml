@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="326.0" prefWidth="401.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.operation">
+   <children>
+      <TextField fx:id="montantfid" layoutX="61.0" layoutY="149.0" prefHeight="44.0" prefWidth="278.0" promptText="entrer le montant svp" style="-fx-font-family: Arial; -fx-font: bolder;">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></TextField>
+      <Button layoutX="56.0" layoutY="217.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="95.0" style="-fx-background-color: #ff0000;" text="canncel" textFill="WHITE" />
+      <Button fx:id="submit" layoutX="221.0" layoutY="217.0" mnemonicParsing="false" onMouseClicked="#submit" prefHeight="44.0" prefWidth="115.0" style="-fx-background-color: #00ab5e;" text="Crediter" textFill="WHITE" />
+      <Label fx:id="title" layoutX="34.0" layoutY="277.0" prefHeight="25.0" prefWidth="334.0" textFill="#008a39" />
+      <Label fx:id="operation" layoutX="22.0" layoutY="54.0" prefHeight="25.0" prefWidth="81.0" />
+      <ComboBox fx:id="combocompte" layoutX="58.0" layoutY="79.0" onMouseClicked="#getAllidCompte" prefHeight="44.0" prefWidth="278.0" promptText="Choisir un compte" style="-fx-background-color: #B34BFA;" />
+      <Text layoutX="55.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Crediter un Compte" textAlignment="CENTER" wrappingWidth="284.13671875">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

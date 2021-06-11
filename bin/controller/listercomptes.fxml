@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="362.0" prefWidth="418.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.listercomptes">
+   <children>
+      <Text layoutX="28.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choisir un client " wrappingWidth="155.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="listerbtn" layoutX="67.0" layoutY="107.0" mnemonicParsing="false" onMouseClicked="#listercomptes" prefHeight="39.0" prefWidth="272.0" style="-fx-background-color: #8800ff;" text="Lister les comptes " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="accountOP" layoutX="67.0" layoutY="58.0" onMouseClicked="#getAllidClient" prefHeight="30.0" prefWidth="272.0" promptText="                            Tous les clients" style="-fx-background-color: white; -fx-border-color: #8800ff;" />
+      <TableView fx:id="tablecomptes" layoutY="162.0" prefHeight="200.0" prefWidth="418.0">
+        <columns>
+          <TableColumn fx:id="numcomptecol" prefWidth="127.0" text="Num Compte " />
+          <TableColumn fx:id="idClientcol" prefWidth="90.0" text="ID client" />
+            <TableColumn fx:id="datecol" prefWidth="200.0" text="Date Creation" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="186.0" prefWidth="460.0" style="-fx-background-color: white; -fx-border-color: blue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.maxsolde">
+   <children>
+      <TableView fx:id="tablesoldemax" layoutX="4.0" layoutY="95.0" prefHeight="78.0" prefWidth="454.0" style="-fx-background-color: white; -fx-border-color: blue;">
+        <columns>
+          <TableColumn fx:id="numcomptecol" prefWidth="121.0" text="num compte" />
+          <TableColumn fx:id="soldecol" prefWidth="187.0" text="solde" />
+            <TableColumn fx:id="clientcol" prefWidth="142.0" text="Client " />
+        </columns>
+      </TableView>
+      <Text fill="#3c00ff" layoutX="49.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="le compte ayant le solde le plus élevé" wrappingWidth="319.13671875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

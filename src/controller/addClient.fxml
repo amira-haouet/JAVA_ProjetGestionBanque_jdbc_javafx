@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="293.0" prefWidth="398.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.addClient">
+   <children>
+      <HBox alignment="CENTER" prefHeight="61.0" prefWidth="396.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Client details" textAlignment="CENTER" wrappingWidth="232.13671875">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <HBox prefHeight="46.0" prefWidth="394.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Nom" wrappingWidth="137.13671875">
+               <font>
+                  <Font name="Century Gothic" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nomfid" prefHeight="42.0" prefWidth="256.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="55.0" prefHeight="46.0" prefWidth="394.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Prenom" wrappingWidth="137.13671875">
+               <font>
+                  <Font name="Century Gothic" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="prenomdif" prefHeight="42.0" prefWidth="256.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="55.0" prefHeight="46.0" prefWidth="394.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Adresse" wrappingWidth="137.13671875">
+               <font>
+                  <Font name="Century Gothic" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="adrsfid" prefHeight="42.0" prefWidth="256.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="55.0" prefHeight="46.0" prefWidth="394.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Date " wrappingWidth="137.13671875">
+               <font>
+                  <Font name="Century Gothic" size="19.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="datefid" prefHeight="36.0" prefWidth="256.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="105.0" prefHeight="46.0" prefWidth="394.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Email" wrappingWidth="137.13671875">
+               <font>
+                  <Font name="Century Gothic" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="emailfid" prefHeight="42.0" prefWidth="256.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="62.0" prefWidth="394.0">
+         <children>
+            <Button fx:id="clear" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#clear" prefHeight="46.0" prefWidth="206.0" style="-fx-background-color: #32CD32;" text="Clear">
+               <font>
+                  <Font name="Century Gothic" size="32.0" />
+               </font>
+            </Button>
+            <Button fx:id="save" mnemonicParsing="false" onMouseClicked="#save" prefHeight="63.0" prefWidth="194.0" style="-fx-background-color: #FF0000;" text="Save">
+               <font>
+                  <Font name="Century Gothic" size="32.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

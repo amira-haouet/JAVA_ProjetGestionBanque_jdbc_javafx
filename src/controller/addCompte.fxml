@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="666.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.addCompte">
+   <children>
+      <TextField fx:id="idcomptefid" layoutX="148.0" layoutY="78.0" prefHeight="43.0" prefWidth="279.0" promptText="id compte" />
+      <Text layoutX="4.0" layoutY="97.423828125" strokeType="OUTSIDE" strokeWidth="0.0" text="id Compte               " wrappingWidth="143.86962890625">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <HBox layoutX="135.0" layoutY="164.0" />
+      <Text layoutX="17.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="etat" wrappingWidth="126.65380859375">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="4.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" choisir client       " wrappingWidth="141.73681640625">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="accountOP" layoutX="148.0" layoutY="235.0" onMouseClicked="#getAllidClient" prefHeight="47.0" prefWidth="273.0" promptText="choisir ule client correspond a ce compte" style="-fx-border-color: blue;" />
+      <Button fx:id="clearajout" layoutX="451.0" layoutY="6.0" mnemonicParsing="false" onMouseClicked="#close" prefHeight="31.0" prefWidth="30.0" style="-fx-background-color: #ff0505;" text="X" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Text fill="#2900f5" layoutX="160.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajout compte" wrappingWidth="187.67578125">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Text>
+      <Button fx:id="clear" layoutX="37.0" layoutY="609.0" mnemonicParsing="false" onMouseClicked="#clear" prefHeight="43.0" prefWidth="139.0" style="-fx-background-color: #ff0000;" text="cancel" textFill="WHITE" />
+      <Button fx:id="save" layoutX="300.0" layoutY="609.0" mnemonicParsing="false" onMouseClicked="#save" prefHeight="43.0" prefWidth="144.0" style="-fx-background-color: #06c562;" text="SAVE" textFill="WHITE" />
+      <TextField fx:id="soldefid" layoutX="145.0" layoutY="164.0" prefHeight="40.0" prefWidth="279.0" promptText="entrer solde" />
+      <Text layoutX="4.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="decouvert max" wrappingWidth="141.73681640625">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="decouvertmaxfid" layoutX="150.0" layoutY="310.0" prefHeight="43.0" prefWidth="273.0" promptText="par defaut=2000" />
+      <DatePicker fx:id="datefid" layoutX="151.0" layoutY="379.0" prefHeight="43.0" prefWidth="273.0" promptText="date de creation du compte" />
+      <Text layoutX="11.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="date de creation">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="etatfid" layoutX="152.0" layoutY="455.0" prefHeight="43.0" prefWidth="273.0" promptText="decouvert ou non" />
+      <Text layoutX="10.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Solde">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Label fx:id="label" layoutX="109.0" layoutY="568.0" prefHeight="31.0" prefWidth="296.0">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <TextField fx:id="debitmaxfid" layoutX="152.0" layoutY="516.0" prefHeight="39.0" prefWidth="273.0" promptText="montant debit max" />
+      <Text layoutX="14.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Debit max">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
